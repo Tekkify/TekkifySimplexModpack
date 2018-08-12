@@ -1,50 +1,50 @@
 [
-  {
+  { // tier 0: nothing // REDSTONE TOGGLE IGNORED: all req redstone to work
     "killRequirement": 0,
     "checkPlayer": true,
-    "checkLight": false,
-    "checkRedstone": false,
+    "checkLight": true,
+    "checkRedstone": true,
     "spawnAmount": 0,
     "cooldown": 0
   },
-  {
-    "killRequirement": 64,
+  { // tier 1: 120 kills, req player, req light, spawns 1 mob/40 sec
+    "killRequirement": 120,
     "checkPlayer": true,
     "checkLight": true,
-    "checkRedstone": false,
+    "checkRedstone": true,
+    "spawnAmount": 1,
+    "cooldown": 800 // 40 seconds
+  },
+  { // tier 2: 250 kills, spawns 1 mob/20 sec
+    "killRequirement": 250,
+    "checkPlayer": true,
+    "checkLight": true,
+    "checkRedstone": true,
+    "spawnAmount": 1,
+    "cooldown": 400 // 20 seconds
+  },
+  { // tier 3: 600 kills, spawns 2 mob/20 sec
+    "killRequirement": 600,
+    "checkPlayer": true,
+    "checkLight": true,
+    "checkRedstone": true,
     "spawnAmount": 2,
     "cooldown": 400
   },
-  {
-    "killRequirement": 128,
-    "checkPlayer": true,
-    "checkLight": true,
-    "checkRedstone": false,
-    "spawnAmount": 4,
-    "cooldown": 200
-  },
-  {
-    "killRequirement": 256,
+  { // tier 4: 1500 kills, no player req, spawns 3 mob/20 sec
+    "killRequirement": 1500,
     "checkPlayer": false,
     "checkLight": true,
-    "checkRedstone": false,
-    "spawnAmount": 4,
-    "cooldown": 100
-  },
-  {
-    "killRequirement": 512,
-    "checkPlayer": false,
-    "checkLight": false,
-    "checkRedstone": false,
-    "spawnAmount": 4,
-    "cooldown": 100
-  },
-  {
-    "killRequirement": 1024,
-    "checkPlayer": false,
-    "checkLight": false,
     "checkRedstone": true,
-    "spawnAmount": 6,
-    "cooldown": 40
+    "spawnAmount": 3,
+    "cooldown": 400
+  },
+  { // tier 5: 3500 kills, spawns 3 mob/10 sec
+    "killRequirement": 3500,
+    "checkPlayer": false,
+    "checkLight": true,
+    "checkRedstone": true,
+    "spawnAmount": 3,
+    "cooldown": 200 // 10 seconds
   }
 ]
